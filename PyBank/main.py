@@ -2,7 +2,7 @@ import csv
 import os
 
 # Get to location of budget_data
-budget_data = os.path.join('Resources', 'budget_data.csv')
+budget_data = os.path.join('PyBank', 'Resources', 'budget_data.csv')
   
 # Reading of CSV file and skip the header                    
 with open(budget_data,'r') as budget_file:
@@ -50,7 +50,7 @@ Greatest Decrease in Profits: {date_greatest_decrease} (${greatest_decrease})
 print(results)
 
 # Create a new path to analysis text file
-analysis_results = os.path.join('analysis','analysis_results.txt')
+analysis_results = os.path.join('PyBank','analysis','analysis_results.txt')
 
 # Write in csv analysis_results                   
 with open(analysis_results,'w') as analysis_file:

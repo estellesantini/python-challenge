@@ -2,7 +2,7 @@ import csv
 import os
 
 #Locate CSV file
-election_data = os.path.join('Resources','election_data.csv')
+election_data = os.path.join('PyPoll','Resources','election_data.csv')
 
 #Read CSV file
 with open(election_data, 'r') as election_file:
@@ -64,7 +64,7 @@ Winner: {winner}
 print(results)
 
 #Create a new file path for text file of results
-analysis_results = os.path.join('analysis','analysis_results.txt')
+analysis_results = os.path.join('PyPoll','analysis','analysis_results.txt')
 
 # Write the results
 with open(analysis_results, 'w') as analysis_file:
